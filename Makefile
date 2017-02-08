@@ -69,7 +69,7 @@ kubelet:
 	@KUBE_VERSION=${KUBE_VERSION} ${build} kubelet
 
 kubelet-install: kubelet
-	@sudo snap install build/kubelet_$(KUBE_VERSION)_amd64.snap --classic --dangerous
+	@sudo snap install build/kubelet_$(KUBE_VERSION)_amd64.snap --dangerous
 
 kubelet-uninstall:
 	@sudo snap remove kubelet
@@ -80,7 +80,7 @@ kube-proxy:
 	@KUBE_VERSION=${KUBE_VERSION} ${build} kube-proxy
 
 kube-proxy-install: kube-proxy
-	@sudo snap install build/kube-proxy_$(KUBE_VERSION)_amd64.snap --classic --dangerous
+	@sudo snap install build/kube-proxy_$(KUBE_VERSION)_amd64.snap --dangerous
 
 kube-proxy-uninstall:
 	@sudo snap remove kube-proxy
