@@ -20,6 +20,8 @@ apps:
       - network-bind
       - docker
       - firewall-control
+      - network-observe
+      - hardware-observe
       - docker-support
   kubelet:
     command: kubelet
@@ -29,6 +31,8 @@ apps:
       - network-bind
       - docker
       - firewall-control
+      - network-observe
+      - hardware-observe
       - docker-support
 parts:
   kubelet:
